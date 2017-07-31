@@ -1,0 +1,295 @@
+.st-selected {
+  background-color: #202566 !important;
+  color: white !important;
+}
+.nav, .pagination, .carousel, .panel-title a
+{
+    cursor: pointer;
+}
+
+/*start user authentication styles*/
+
+.instructions .container h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.instructions {
+  background-color: #333333;
+  color: #DDDDDD;
+}
+
+#entryForm {
+  margin-top: 14px;
+}
+
+#container {
+  margin-top: 10px;
+
+}
+
+.message {
+  padding: 10px 0;
+}
+
+.message p {
+  margin-left: 10px;
+}
+
+.message:nth-child(odd) {
+  background-color: #eeeeee;
+}
+
+.message:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+/*end user authentication styles*/
+
+/*start navbar styles*/
+.red {
+  background-color: red;
+}
+
+body {
+    padding-top: 93px;
+
+}
+
+.navbar-default {
+    background-image: url("http://stlf.net/assets/templates/stlf/images/bg_header.jpg");
+    color: white;
+    border: none;
+    font-size: 20px;
+}
+
+.navbar-default .navbar-brand {
+    /*color: orange;*/
+    /*float: left;*/
+    height: 92px;
+    padding: 35px 25px;
+    font-size: 20px;
+    font-size: 125%;
+    font-weight: 700;
+    letter-spacing: .03em;
+    line-height: 20px;
+}
+
+.navbar-brand {
+  background-image: url("http://stlf.net/assets/templates/stlf/images/logo_stlf.png");
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+  margin-left: 24%;
+  width: 327px;
+  height: 49px;
+}
+
+.navbar-default .navbar-brand:hover {
+  color: black;
+}
+
+/*.navbar-default .navbar-nav > li:hover,*/
+/*.navbar-default .navbar-nav > li:active,*/
+/*.navbar-default .navbar-nav > li:focus {*/
+/*}*/
+
+.navbar-default .navbar-nav > li > a {
+  color: orange;
+  -webkit-transition: all 0.15s ease-out 0s;
+  -moz-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:active,
+.navbar-default .navbar-nav > li > a:focus {
+  color:black;
+  font-size: xx-large;
+}
+
+.navbar-default .navbar-toggle {
+  border: none;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: orange;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: black
+}
+
+.navbar-default .navbar-collapse {
+  border-color: orange;
+}
+
+.navbar-right {
+  /*position: absolute;*/
+  right: 2rem;
+  color: yellow;
+  list-style-type: none;
+  /*font-weight: bold;*/
+}
+.navbar-link {
+  font-family: monospace;
+  font-size: large;
+  font-weight: bold;
+  color: #7deeff;
+}
+
+.nav > li {
+  cursor: pointer;
+  padding: 0 .25em;
+}
+
+.navbar-left a{
+  color: white;
+  /*background: black;*/
+  /*background-color: #B3E7F4;*/
+}
+
+/*.navbar-left a:hover,*/
+/*.navbar-left a:active,*/
+/*.navbar-left a:focus  {*/
+  /*font-weight: bold;*/
+  /*color: black;*/
+  /*opacity: 0.3;*/
+  /*background-color: transparent;*/
+  /*background-image: url("http://stlf.net/assets/templates/stlf/images/bg_header.jpg");*/
+/*}*/
+.user-nav a:hover,
+.user-nav a:active,
+.user-nav a:focus  {
+    color: #7deeff;
+    /*box-shadow: inset 0 0 0 5px #000000;*/
+    background-image: url("http://www.stlf.net/assets/templates/stlf/images/bg_subhead.jpg");
+
+}
+
+
+  /*end navbar styles*/
+
+#footer {
+  clear:both;
+  height:27px;
+  line-height:27px;
+  background-color:#000;
+  border-top:2px solid #00cdff;
+  font-size:13px;
+  color:#fff;
+}
+
+#footer a {
+  color:#fff;
+}
+
+.chart-display {
+  width: 100%;
+  height: 500px;
+}
+
+.modal-login-image {
+  width: 270px;
+}
+
+.modal-stlf-header, .modal-stlf-footer {
+  background-image: url("/assets/images/header_bg.jpg");
+}
+
+/*.modal-stlf-footer {*/
+  /*background-color: black;*/
+/*}*/
+
+.login-btn {
+    margin-top:22px;
+}
+.subhead{
+    background-image: url("http://www.stlf.net/assets/templates/stlf/images/bg_subhead.jpg");
+    font-size: medium;
+    height: 55px;
+    border-top: solid;
+}
+.welcome {
+    color: white;
+}
+.corner-x, .corner-x:hover {
+  color: red;
+}
+
+/*kenzies shit*/
+
+
+.navbar-default .navbar-nav > li > a {
+    font-family: monospace;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 16px;
+    color: #444;
+}
+.blue-lines{
+    height: 119px;
+    width: 100%;
+    background-image: url('http://stlf.net/assets/templates/stlf/images/bg_home_content.png');
+    background-repeat: repeat;
+    /*z-index: -10;*/
+
+}
+
+.register-user {
+  margin-top: 30px;
+}
+
+.user-btn {
+  float: right;
+}
+
+select {
+  border: 1px solid grey;
+  padding: 2px;
+  margin: 5px;
+}
+
+#sponsors {
+    height:84px;
+    clear:both;
+    position:relative;
+    overflow:hidden;
+}
+
+#sponsors .logo {
+    float:left;
+    border:1px solid #fff;
+    margin-right:6px;
+}
+
+.sponsorText {
+    width:240px;
+    position:absolute;
+    right:0;
+    top:16px;;
+    line-height:1.5;
+}
+.subfooter {
+    padding-bottom: 50px;
+    position: fixed;
+    z-index: -5;
+}
+
+li {
+    list-style-type: none;
+}
+
+.goal-form {
+    background-color: white;
+
+}
+.goals-btn {
+    margin-top: 20px;
+}
+.home-view{
+    background-color: white;
+}
+.datepicker {
+    width: 150px;
+}

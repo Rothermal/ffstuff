@@ -1,0 +1,58 @@
+<div class="home-view container">
+<div>
+    <h4 class="text-center table-header">Money Raised for period ending : {{endDate.date | date : shortDate}}</h4>
+        <div class="row">
+            <div class="datepicker">
+                <label>Select End Date</label>
+                <p class="input-group">
+                    <input type="text" class="form-control" ng-click uib-datepicker-popup="MM-dd-yyyy" ng-model="dt" ng-change="setEndDate(dt)" is-open="popup1.opened" datepicker-options="dateOptions" ng-required="true" />
+                <span class="input-group-btn">
+                <button type="button" class="btn btn-default" ng-click="open1()"><i class="glyphicon glyphicon-calendar"></i></button>
+                </span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <table st-table="displayedResults" st-safe-src="accounts" class="table table-striped">
+        <thead>
+        <tr >
+            <th st-sort="">Account Type</th>
+            <th ng-click="open('lg')" st-sort="">{{date}} YTD</th>
+            <th st-sort="">{{date - 1}} YTD</th>
+            <th st-sort="">{{date - 2}} YTD</th>
+            <th st-sort="">{{date}} Goal</th>
+            <th st-sort=""> % of Total Goal {{date}}</th>
+            <th st-sort=""> % of Individual Goal</th>
+            <th st-sort="">{{date -1}} Fiscal Year</th>
+            <th st-sort="">{{date - 2}} Fiscal Year</th>
+        </tr>
+
+        </thead>
+        <tbody>
+        <!--currently inop, need to inject the data into this controller.-->
+        <tr st-select-row="result" st-select-mode="single" ng-click="open('lg', result)" ng-repeat="result in displayedResults">
+            <td>{{result.type}}</td>
+            <td>{{result.ytd | currency : $ : 0 }}</td>
+            <td>{{result.ytdM1 | currency : $ : 0 }}</td>
+            <td>{{result.ytdM2 | currency : $ : 0 }}</td>
+            <td>{{result.goal | currency : $ : 0 }}</td>
+            <td class="text-center">{{result.percentOfGoal }}</td>
+            <td class="text-center">{{result.percentToGoal  }}</td>
+            <td>{{result.tfyM1 | currency : $ : 0 }}</td>
+            <td>{{result.tfyM2 | currency : $ : 0 }}</td>
+
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td colspan="5" class="text-center">
+                <div st-pagination="" st-items-by-page="itemsByPage" st-displayed-pages="15"></div>
+            </td>
+        </tr>
+        </tfoot>
+    </table>
+
+
+
+</div>
